@@ -68,7 +68,7 @@ export default {
             version,
             // debounce changes so we can save some requests
             debounce: 250,
-            // onSendable is called whenever there are changed we have to send to our server
+            // onSendable is called whenever there are changes we have to send to our server
             onSendable: ({ sendable }) => {
               this.socket.emit('update', sendable)
             },
